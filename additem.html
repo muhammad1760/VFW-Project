@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- Rashad Muhammad, Project 1, VFW 1201 -->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="An App that allows users to list their favorite TV shows." />
+		<meta name="keywords" content="favorite TV show, favorite TV show, app that stores shows, TV programs" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<title>Must See TV</title>
+		<!-- A link to the CSS stylesheet would go here if we were using one in this assignment. -->
+		<!-- A script source would go here if we were using Javascript in this assignment -->
+	</head>
+	<body>
+		<h1>Must See TV Guide</h1>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>New TV Show</legend>
+				<ul>
+					<li><label for="showname">Name of TV Show:</label><input type="text" id="showname" /></li>
+					<li><label for="startdate">Show Start Date:</label><input type="date" min="2000-01-01" max="2412-01-01" id="startdate" name="startdate" />
+					<li><label for="starttime">Show Time:</label><input type="text" id="starttime" />
+						<input type="radio" value="AM" id="am" name="starttimeofday" /><label for="am">AM</label>
+						<input type="radio" value="PM" id="pm" name="starttimeofday" /><label for="pm">PM</label>
+					</li>
+					<li><label for="channel">Show Channel</label>
+						<select id="channel">
+							<optgroup label="Premium Channels">
+								<option value="HBO">HBO</option>
+								<option value="Showtime">Showtime</option>
+								<option value="Cinemax">Cinemax</option>
+								<option value="Starz">Starz</option>
+							</optgroup>
+							<optgroup label="Cable Channels">
+								<option value="ABC">ABC</option>
+								<option value="NBC">NBC</option>
+								<option value="CBS">CBS</option>
+							</optgroup>
+							<optgroup label="News Channels">
+								<option value="CNN">CNN</option>
+								<option value="HLN">HLN</option>
+								<option value="MSNBC">MSNBC</option>
+								<option value="FOX">FOX</option>
+							</optgroup>
+							<optgroup label="Miscellaneous">
+								<option value="Other">Other</option>
+							</optgroup>
+						</select>
+					</li>
+					<li>Show Day:
+						<ul>
+							<li><input type="checkbox" value="Sunday" id="sunday" /><label for="sunday">Sunday</label></li>
+							<li><input type="checkbox" value="Monday" id="monday" /><label for="monday">Monday</label></li>
+							<li><input type="checkbox" value="Tuesday" id="tuesday" /><label for="tuesday">Tuesday</label></li>
+							<li><input type="checkbox" value="Wednesday" id="wednesday" /><label for="wednesday">Wednesday</label></li>
+							<li><input type="checkbox" value="Thursday" id="thursday" /><label for="thursday">Thursday</label></li>
+							<li><input type="checkbox" value="Friday" id="friday" /><label for="friday">Friday</label></li>
+							<li><input type="checkbox" value="Saturday" id="saturday" /><label for="saturday">Saturday</label></li>
+						</ul>
+					</li>
+					<li><label for="rating">My Favorite Meter. On a Scale of 1 to 10 this show is:</label>
+						<br />
+						<input type="range" min="1" max="10" name="rating" />
+					</li>
+					<li><label for="comments">Comments about this show:</label>
+						<br />
+						<textarea id="comments"></textarea>
+					</li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="Add TV Show" />
+			<ul>
+				<li><a href="#">Clear Stored Data</a></li>
+				<li><a href="#">Display Data</a></li>
+			</ul>
+		</form>
+	</body>
+</html>
+							
+	
