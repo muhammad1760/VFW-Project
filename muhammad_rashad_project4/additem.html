@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Rashad Muhammad, Project 4, VFW 1201 -->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="An App that allows users to list their favorite TV shows." />
+		<meta name="keywords" content="favorite TV show, favorite TV show, app that stores shows, TV programs" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<title>Must See TV</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />  
+	</head>
+	<body>
+		<h1>Must See TV Guide</h1>
+		<form action="#" method="post" id="showsForm">
+			<fieldset>
+				<legend>New TV Show</legend>
+				<span><font color = "red">*</font> Fields are required.</span>
+				<ul id="errors"></ul>
+				<ul id="aboutShow">
+					<li><label for="showname">Name of TV Show<font color = "red">*</font>:</label><input type="text" id="showname" /></li>
+					<li><label for="startdate">Date Entered:</label><input type="date" min="2000-01-01" max="2412-01-01" id="startdate" name="startdate" />
+					<li><label for="starttime">Show Time<font color = "red">*</font>:</label><input type="text" id="starttime" placeholder="Use this format: 01:00" />
+						<input type="radio" value="AM" id="am" name="dayornight" checked /><label for="am">AM</label> 
+						<input type="radio" value="PM" id="pm" name="dayornight" /><label for="pm">PM</label>
+					</li>
+					<li id="select"><label for="channel">Show Channel<font color = "red">*</font>:</label></li>
+					<li>Show Day:
+						<ul>
+							<li><input type="checkbox" value="Sunday" id="sunday" name="showday" /><label for="sunday">Sunday</label></li>
+							<li><input type="checkbox" value="Monday" id="monday" name="showday" /><label for="monday">Monday</label></li>
+							<li><input type="checkbox" value="Tuesday" id="tuesday" name="showday" /><label for="tuesday">Tuesday</label></li>
+							<li><input type="checkbox" value="Wednesday" id="wednesday" name="showday" /><label for="wednesday">Wednesday</label></li>
+							<li><input type="checkbox" value="Thursday" id="thursday" name="showday" /><label for="thursday">Thursday</label></li>
+							<li><input type="checkbox" value="Friday" id="friday" name="showday" /><label for="friday">Friday</label></li>
+							<li><input type="checkbox" value="Saturday" id="saturday" name="showday" /><label for="saturday">Saturday</label></li>
+						</ul>
+					</li>
+					<li><label for="rating">My Favorite Meter. On a Scale of 1 to 10 this show is:</label>
+						<br />
+						<input type="range" min="1" max="10" name="rating" id="favrating" />
+					</li>
+					<li><label for="comments">Comments about this show:</label>
+						<br />
+						<textarea id="comments"></textarea>
+					</li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="Add TV Show" id="submit" />
+		</form>
+		<nav>	
+			<a href="#" id="clear">Clear Stored Data</a>
+			<a href="#" id="displayData">Display Data</a>
+			<a href="additem.html" style= "display:none;" id="addNew">Add New Show</a>
+		</nav>
+		<script src="js/json.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>
+							
+	

@@ -1,0 +1,64 @@
+/*
+Rashad Muhammad
+Project 4
+VFW - 1201
+*/
+
+html {
+    background-color: white;
+}
+body {
+    font-family: "Lucida Grande", Arial, serif;
+	font-size: 16px;
+    margin: 1.5px auto;
+    padding: 1.5em;
+    background-color: #60B9CE;
+    color: #015367;
+    max-width: 35em;
+    line-height: 1.5em;
+}
+h1 {
+    background-color: #015367;
+    color: white;
+    font-size: 200%;
+    padding: 0.75em;
+    margin: -0.75em -0.75em 0.75em -0.75em; 
+	text-align: center;
+}
+h2 {
+	color: white;
+	margin: 1em 0em -0.75em -0.25em; 
+}
+span {
+	display: block;
+}
+p {
+    margin: 1.5em 0;
+	font-size: 16px;
+}
+legend {
+	color : white;
+}
+fieldset {
+	border: 3px dotted #04819E;
+}
+input:focus {
+	background-color: #FFD175;
+}
+textarea {
+	width: 250px;
+	height: 50px;
+}
+a {
+	color: white;
+	margin-left: 0px;
+	margin-right: 20px;
+}
+a:hover { 
+	color:red;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	margin-top: 15px;
+}
